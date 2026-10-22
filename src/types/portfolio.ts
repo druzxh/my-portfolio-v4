@@ -2,6 +2,7 @@ export interface ProfileLinks {
   cv: string;
   github: string;
   linkedin: string;
+  instagram?: string;
   email: string;
   whatsapp: string;
 }

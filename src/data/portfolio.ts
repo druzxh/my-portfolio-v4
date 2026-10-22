@@ -9,11 +9,12 @@ export const portfolioData: PortfolioData = {
       'Programmer di Diskominfo Tangerang Selatan dan mahasiswa Teknik Informatika di Institut Teknologi Tangerang Selatan (ITTS). Berpengalaman merancang RESTful API, integrasi data antar-layanan publik daerah, dan arsitektur backend modular yang andal.',
     links: {
       cv: '/assets/badrudin-resume.pdf',
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com/in/badrudin',
-      email: 'contact@badrudin.dev',
+      github: 'https://github.com/druzxh',
+      linkedin: 'https://www.linkedin.com/in/bdrudin/',
+      instagram: 'https://www.instagram.com/bd.ruu/',
+      email: 'badrudin.on@gmail.com',
       whatsapp:
-        'https://wa.me/628XXXXXXXXXX?text=Halo%20Badrudin%2C%20saya%20melihat%20portofolio%20Anda',
+        'https://wa.me/6281585768935?text=Halo%20Badrudin%2C%20saya%20melihat%20portofolio%20Anda',
     },
   },
   experience: [
@@ -54,7 +55,7 @@ export const portfolioData: PortfolioData = {
       solution:
         'Mengembangkan RESTful endpoint dengan autentikasi berbasis token, rate limiting, logging transaksi terintegrasi, dan sinkronisasi background worker menggunakan Laravel & Docker.',
       techStack: ['PHP', 'Laravel', 'MySQL', 'REST API', 'Docker', 'Postman'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/druzxh',
       liveUrl: '',
       featured: true,
     },
@@ -68,7 +69,7 @@ export const portfolioData: PortfolioData = {
       solution:
         'Menerapkan pola Repository & Unit of Work dengan ASP.NET Core dan EF Core, memastikan pemisahan concern tingkat tinggi serta kemudahan pengujian unit.',
       techStack: ['C#', 'ASP.NET Core', 'Entity Framework Core', 'SQLite', 'Swagger'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/druzxh',
       liveUrl: '',
       featured: true,
     },
@@ -82,7 +83,7 @@ export const portfolioData: PortfolioData = {
       solution:
         'Paket starter kit siap pakai dengan modul permission guard, UI Tailwind yang bersih, audit log login, dan generator template otomatis.',
       techStack: ['Laravel', 'Blade', 'Tailwind CSS', 'MySQL', 'PHP'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/druzxh',
       liveUrl: '',
       featured: true,
     },

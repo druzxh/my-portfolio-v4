@@ -6,7 +6,7 @@ import { Container } from '@/components/common/Container';
 import { SocialLink } from '@/components/common/SocialLink';
 import { Button } from '@/components/common/Button';
 import { Mail, MessageSquareCode, ArrowUp } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '@/components/common/Icons';
+import { GithubIcon, LinkedinIcon, InstagramIcon } from '@/components/common/Icons';
 
 export function Footer() {
   const { profile } = portfolioData;
@@ -79,6 +79,13 @@ export function Footer() {
               icon={<LinkedinIcon className="h-4 w-4" />}
               label="LinkedIn Profile"
             />
+            {profile.links.instagram && (
+              <SocialLink
+                href={profile.links.instagram}
+                icon={<InstagramIcon className="h-4 w-4" />}
+                label="Instagram Profile"
+              />
+            )}
             <SocialLink
               href={`mailto:${profile.links.email}`}
               icon={<Mail className="h-4 w-4" />}

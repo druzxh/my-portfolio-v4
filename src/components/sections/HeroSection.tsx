@@ -14,7 +14,7 @@ import {
   Sparkles,
   Layers,
 } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '@/components/common/Icons';
+import { GithubIcon, LinkedinIcon, InstagramIcon } from '@/components/common/Icons';
 import { motion } from 'framer-motion';
 import { fadeIn, slideUp } from '@/lib/motion';
 
@@ -129,6 +129,13 @@ export function HeroSection() {
                 icon={<LinkedinIcon className="h-4 w-4" />}
                 label="Profil LinkedIn"
               />
+              {profile.links.instagram && (
+                <SocialLink
+                  href={profile.links.instagram}
+                  icon={<InstagramIcon className="h-4 w-4" />}
+                  label="Profil Instagram"
+                />
+              )}
             </div>
           </motion.div>
         </motion.div>
