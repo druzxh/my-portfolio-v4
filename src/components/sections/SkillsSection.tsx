@@ -4,7 +4,7 @@ import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
-import { Code2, Server, Database, Check } from 'lucide-react';
+import { Code2, Server, Database, Check, Cpu } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { slideUp } from '@/lib/motion';
 
@@ -15,9 +15,11 @@ export function SkillsSection() {
     switch (category) {
       case 'Languages':
         return <Code2 className="h-5 w-5 text-sky-400" />;
-      case 'Frameworks & Backend':
+      case 'Web Development & Frameworks':
         return <Server className="h-5 w-5 text-indigo-400" />;
-      case 'Database & DevOps Tools':
+      case 'Data Science & Machine Learning':
+        return <Cpu className="h-5 w-5 text-amber-400" />;
+      case 'DevOps, Cloud & Database':
         return <Database className="h-5 w-5 text-emerald-400" />;
       default:
         return <Code2 className="h-5 w-5 text-sky-400" />;
@@ -30,10 +32,10 @@ export function SkillsSection() {
         <SectionHeading
           badgeText="Teknologi &amp; Kompetensi"
           title="Keahlian &amp; Peralatan"
-          subtitle="Kumpulan bahasa pemrograman, kerangka kerja backend modern, basis data, dan tooling yang biasa digunakan dalam pengembangan sistem."
+          subtitle="Kumpulan bahasa pemrograman, kerangka kerja web & backend modern, machine learning, data science, basis data, dan tooling DevOps."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skills.map((cat, idx) => (
             <motion.div
               key={cat.category}

@@ -1,11 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { portfolioData } from '@/data/portfolio';
 import { Container } from '@/components/common/Container';
 import { Badge } from '@/components/common/Badge';
 import { Button } from '@/components/common/Button';
 import { SocialLink } from '@/components/common/SocialLink';
+import { ResumeModal } from '@/components/common/ResumeModal';
 import {
   FileText,
   MessageSquareCode,
@@ -13,6 +14,8 @@ import {
   GraduationCap,
   Sparkles,
   Layers,
+  Eye,
+  Download,
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from '@/components/common/Icons';
 import { motion } from 'framer-motion';
@@ -20,6 +23,7 @@ import { fadeIn, slideUp } from '@/lib/motion';
 
 export function HeroSection() {
   const { profile } = portfolioData;
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   return (
     <section
@@ -99,13 +103,23 @@ export function HeroSection() {
             className="flex flex-wrap items-center gap-3.5 pt-2 w-full"
           >
             <Button
-              href={profile.links.cv}
+              type="button"
+              onClick={() => setIsResumeOpen(true)}
               variant="primary"
               size="lg"
-              icon={<FileText className="h-4 w-4" />}
+              icon={<Eye className="h-4 w-4" />}
+            >
+              Preview Resume
+            </Button>
+
+            <Button
+              href={profile.links.cv}
+              variant="outline"
+              size="lg"
+              icon={<Download className="h-4 w-4" />}
               download
             >
-              Download CV (PDF)
+              Unduh PDF
             </Button>
 
             <Button
@@ -140,6 +154,12 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </Container>
+
+      {/* Interactive Resume Preview Modal */}
+      <ResumeModal
+        isOpen={isResumeOpen}
+        onClose={() => setIsResumeOpen(false)}
+      />
     </section>
   );
 }

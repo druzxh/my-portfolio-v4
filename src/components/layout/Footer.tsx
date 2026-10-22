@@ -63,9 +63,6 @@ export function Footer() {
             <p>
               © {currentYear} {profile.name}. All rights reserved.
             </p>
-            <p className="mt-0.5 text-slate-500">
-              Diskominfo Kota Tangerang Selatan & Institut Teknologi Tangerang Selatan (ITTS).
-            </p>
           </div>
 
           <div className="flex items-center gap-2">
