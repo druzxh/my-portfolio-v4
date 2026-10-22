@@ -1,0 +1,32 @@
+export const siteConfig = {
+  name: 'Badrudin',
+  title: 'Badrudin — Programmer Diskominfo Tangsel & CS Student ITTS',
+  description:
+    'Portofolio profesional Badrudin, Programmer di Diskominfo Tangerang Selatan dan mahasiswa Teknik Informatika di ITTS. Spesialisasi arsitektur RESTful API, integrasi data instansi, dan backend modular.',
+  url: 'https://badrudin.dev',
+  ogImage: '/og-image.png',
+  author: 'Badrudin',
+  keywords: [
+    'Badrudin',
+    'Programmer Tangsel',
+    'Diskominfo Tangerang Selatan',
+    'Institut Teknologi Tangerang Selatan',
+    'ITTS',
+    'Backend Developer',
+    'Software Engineer',
+    'RESTful API',
+    'Laravel',
+    'ASP.NET Core',
+    'Next.js',
+    'TypeScript',
+  ],
+  navItems: [
+    { label: 'Tentang', href: '#about' },
+    { label: 'Pengalaman', href: '#experience' },
+    { label: 'Pendidikan', href: '#education' },
+    { label: 'Proyek', href: '#projects' },
+    { label: 'Keahlian', href: '#skills' },
+    { label: 'Aktivitas', href: '#activities' },
+    { label: 'Kontak', href: '#contact' },
+  ],
+};
