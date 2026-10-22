@@ -102,7 +102,7 @@ export const portfolioData: PortfolioData = {
       id: 'edu-1',
       institution: 'Institut Teknologi Tangerang Selatan (ITTS)',
       degree: 'S1 Teknik Informatika',
-      period: 'Sedang Berjalan (Kelas Karyawan)',
+      period: 'Sedang Berjalan (Kelas Executive)',
       highlights: [
         'Arsitektur Perangkat Lunak & Clean Architecture',
         'Basis Data & Sistem Terdistribusi',

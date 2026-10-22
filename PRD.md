@@ -34,7 +34,7 @@
 
 ### 3.2 Experience & Education (Two-Column / Alternating Timeline)
 - **Work Experience**: Programmer di Dinas Komunikasi dan Informatika Tangerang Selatan (pengembangan API, integrasi data antar-aplikasi kota, pemeliharaan sistem internal).
-- **Academics**: Institut Teknologi Tangerang Selatan (ITTS) — Program Studi Informatika / Sistem Informasi (Kelas Karyawan/Malam).
+- **Academics**: Institut Teknologi Tangerang Selatan (ITTS) — Program Studi Informatika / Sistem Informasi (Kelas Executive/Malam).
 
 ### 3.3 Featured Projects (Grid Card Layout)
 - 3 Proyek Utama:
