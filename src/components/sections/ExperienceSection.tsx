@@ -50,6 +50,11 @@ export function ExperienceSection() {
                   </div>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {item.employmentType && (
+                      <Badge variant="success">
+                        <span>{item.employmentType}</span>
+                      </Badge>
+                    )}
                     <Badge variant="accent">
                       <Calendar className="h-3 w-3" />
                       <span>{item.period}</span>
@@ -80,6 +85,17 @@ export function ExperienceSection() {
                     ))}
                   </ul>
                 </div>
+
+                {/* Skills used */}
+                {item.skills && item.skills.length > 0 && (
+                  <div className="mt-5 pt-4 border-t border-slate-800/60 flex flex-wrap gap-1.5">
+                    {item.skills.map((skill) => (
+                      <Badge key={skill} variant="tech">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

@@ -21,6 +21,8 @@ export interface ExperienceItem {
   organization: string;
   period: string;
   location?: string;
+  employmentType?: string;
+  skills?: string[];
   responsibilities: string[];
 }
 
@@ -58,6 +60,7 @@ export interface ActivityItem {
   organization: string;
   period: string;
   description: string;
+  highlight?: string;
 }
 
 export interface PortfolioData {

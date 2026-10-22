@@ -52,13 +52,26 @@ export function ActivitiesSection() {
                 </Badge>
               </div>
 
-              <p className="text-sm text-slate-300 leading-relaxed mt-4">
+              {act.highlight && (
+                <div className="mb-3">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+                    <Award className="h-3.5 w-3.5 text-amber-400 shrink-0" />
+                    <span>{act.highlight}</span>
+                  </span>
+                </div>
+              )}
+
+              <p className="text-sm text-slate-300 leading-relaxed mt-2">
                 {act.description}
               </p>
 
               <div className="mt-5 pt-4 border-t border-slate-800/60 flex items-center gap-2 text-xs text-slate-400">
                 <HeartHandshake className="h-4 w-4 text-emerald-400 shrink-0" />
-                <span>Membantu transfer knowledge dan best practices arsitektur API</span>
+                <span>
+                  {act.id === 'act-gsa'
+                    ? 'Membangun jembatan antara dunia akademis dan industri teknologi (AI)'
+                    : 'Membantu transfer knowledge dan best practices arsitektur API'}
+                </span>
               </div>
             </motion.div>
           ))}
